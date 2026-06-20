@@ -25,12 +25,13 @@
         }
         ?>
 
-        <form action="login.php" method="POST">
+        <form action="login.php" method="POST" autocomplete="off">
+            
             <label style="font-weight: bold; display: block; margin-bottom: 5px;">Email Address</label>
-            <input type="email" name="email" class="form-control" required>
+            <input type="email" name="email" class="form-control" required autocomplete="off">
             
             <label style="font-weight: bold; display: block; margin-top: 15px; margin-bottom: 5px;">Password</label>
-            <input type="password" name="password" class="form-control" required>
+            <input type="password" name="password" class="form-control" required autocomplete="new-password">
             
             <button type="submit" class="btn-main" style="margin-top: 20px; width: 100%;">Login</button>
         </form>

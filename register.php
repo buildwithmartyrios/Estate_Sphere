@@ -41,23 +41,23 @@ include('header.php');
         }
         ?>
 
-        <form action="register.php" method="POST">
+        <form action="register.php" method="POST" autocomplete="off">
             <div style="margin-bottom: 20px;">
                 <label style="display:block; margin-bottom:8px; font-weight:bold; color:var(--navy);">Full Name</label>
                 <input type="text" name="full_name" class="form-control" placeholder="Enter your full name" required 
-                       style="width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;">
+                       style="width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;" autocomplete="off">
             </div>
 
             <div style="margin-bottom: 20px;">
                 <label style="display:block; margin-bottom:8px; font-weight:bold; color:var(--navy);">Email Address</label>
                 <input type="email" name="email" class="form-control" placeholder="example@mail.com" required 
-                       style="width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;">
+                       style="width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;" autocomplete="off">
             </div>
 
             <div style="margin-bottom: 25px;">
                 <label style="display:block; margin-bottom:8px; font-weight:bold; color:var(--navy);">Password</label>
                 <input type="password" name="password" class="form-control" minlength="8" placeholder="At least 8 characters" required 
-                       style="width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;">
+                       style="width:100%; padding:12px; border:1px solid #ddd; border-radius:8px; box-sizing:border-box;" autocomplete="new-password">
                 <small style="color:#888;">Keep your password secure and unique.</small>
             </div>
 
